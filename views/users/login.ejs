@@ -1,0 +1,34 @@
+<% layout("/layouts/boilerPlate") %>
+
+<div class="row mt-3">
+    <h3 class="col-6 offset-4">LogIn on Wanderlust</h3>
+    <div class="col-6 offset-3">
+        <form action="/login" method="post" class="needs-validation" novalidate>
+            
+            <div class="mb-3">
+                <label for="username">Username</label>
+                <input name="username" placeholder="enter a username" type="text" class="form-control" id="username" required/>
+                <div class="valid-feedback">
+                  Username looks good.
+                </div>
+                <div class="invalid-feedback">
+                  Please enter valid username!
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="password">Password</label>
+                <input name="password" placeholder="create a strong password" type="password" class="form-control" id="password" required/>
+                <div class="valid-feedback">
+                  Your password is strong.
+                </div>
+                <div class="invalid-feedback">
+                  Password enter correct password!!
+                </div>
+              </div>
+              
+              <button class="btn btn-success">LogIn</button> <br> <br>
+
+        </form>
+    </div>
+</div>

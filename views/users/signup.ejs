@@ -1,0 +1,54 @@
+<% layout("/layouts/boilerPlate") %>
+
+<div class="row mt-3">
+    <h3 class="col-6 offset-4">Signup on Wanderlust</h3>
+    <div class="col-6 offset-3">
+        <form action="/signup" method="post" class="needs-validation" novalidate>
+            
+            <div class="mb-3">
+                <label for="username">Username</label>
+                <input name="username" placeholder="enter a username" type="text" class="form-control" id="username" required/>
+                <div class="valid-feedback">
+                  Username looks good.
+                </div>
+                <div class="invalid-feedback">
+                  Please enter valid username!
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email">Email</label>
+                <input name="email" placeholder="enter your email" type="email" class="form-control" id="email" required/>
+                <div class="valid-feedback">
+                  Your email is good and unique.
+                </div>
+                <div class="invalid-feedback">
+                  Please enter valid email!
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="password">Password</label>
+                <input name="password" placeholder="create a strong password" type="password" class="form-control" id="password" required/>
+                <div class="valid-feedback">
+                  Your password is strong.
+                </div>
+                <div class="invalid-feedback">
+                  Password must contain 8 character and special symbols!!
+                </div>
+              </div>
+
+              <!-- <div class="mb-3">
+                <label for="cpassword">Confirm Password</label>
+                <input name="cpassword" placeholder="create a strong password" type="password" class="form-control" id="cpassword" required/>
+                <div class="valid-feedback">
+                  Your password is strong.
+                </div>
+                <div class="invalid-feedback">
+                  Password doesn't match!!
+                </div>
+              </div> -->
+              <button class="btn btn-success">SignUp</button> <br> <br>
+        </form>
+    </div>
+</div>

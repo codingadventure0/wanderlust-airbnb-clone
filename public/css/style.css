@@ -1,0 +1,154 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #fff;
+}
+
+.fa-compass{
+    color:#fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color:#222222 !important;
+}
+.nav-link:hover{
+    color:#fe424d !important;
+    border-bottom: 2px solid #fe424d ;
+    transition: .25s !important;
+}
+
+/* Footer */
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand{
+    width: 100%;
+    /* vertical-align: middle; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+/* Card */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+    width: 20rem !important;
+}
+.card a{
+    text-decoration: none;
+    color: #222222;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card a img{
+    height: 20rem;
+}
+.card-body{
+    padding: 0 !important;
+    text-align: center;
+}
+.card-text p{
+    font-weight: 400;
+}
+
+@media(max-width:668px){
+    .card{
+        margin: 10px auto;
+    }
+    .card a img{
+        height: 20rem !important;
+        width: 18.5rem !important;
+    }
+}
+
+/* Card effect */
+/* .card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: #ebebeb;
+    transition: .25s;
+} */
+.card:hover{
+    opacity: 0.65;
+    transition: .25s;
+}
+
+/* Button */
+.add-btn{
+    height: 2rem;
+    width: 7rem;
+    font-size: 1rem;
+    border: none;
+    border-radius:5px ;
+    background-color: #fe424d ;
+    color: #fff ;
+    font-weight: 500 ;
+}
+
+/* Show Page  */
+.show-img{
+    height: 30vh;
+}
+.btns{
+    display: flex;
+    /* justify-content: center; */
+}
+.show-card-text{
+    text-align: start;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+.edit-btn{
+    background-color: #fe424d !important;
+    color: #fff !important;
+    border: none !important;
+}
+.delete-btn{
+    border: none !important;
+}
+
+
+/* For Map */
+#map{
+    height: 400px;
+    width: 80vh;
+}
