@@ -11,7 +11,6 @@ Listing creation and management steps
 Booking and search functionalities.
 
 Technologies:
-
 technologies and frameworks used in your project, including:
 Frontend (e.g., HTML, CSS, JavaScript libraries)
 Backend (e.g., Node.js, Express, database)
